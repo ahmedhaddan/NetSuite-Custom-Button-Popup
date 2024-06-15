@@ -57,8 +57,11 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="submitPopup()">OK</button>
+                <button type="button" class="btn btn-primary" id="submitBtn" onclick="submitPopup()">OK</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <div id="loadingSpinner" class="spinner-border text-primary" role="status" style="display: none;">
+                    <span class="sr-only">Loading...</span>
+                </div>
             </div>
         </div>
     </div>

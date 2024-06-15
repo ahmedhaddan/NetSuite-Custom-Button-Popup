@@ -91,13 +91,23 @@ define(['N/record'], function (record) {
 
         console.log('Form Values:', formValues);
 
-        // Perform any necessary actions with the form values
+        // Show loading spinner and disable the OK button
+        var submitBtn = document.getElementById('submitBtn');
+        var loadingSpinner = document.getElementById('loadingSpinner');
+        submitBtn.disabled = true;
+        loadingSpinner.style.display = 'inline-block';
 
+        // Simulate an async process with a timeout
+        setTimeout(function () {
+            // Perform any necessary actions with the form values
 
+            // Hide loading spinner and enable the OK button
+            loadingSpinner.style.display = 'none';
+            submitBtn.disabled = false;
 
-        location.reload(); // Refresh the page to reflect changes
+            location.reload(); // Refresh the page to reflect changes
+        }, 2000); // Replace with the actual process duration
     }
-
 
     window.submitPopup = submitPopup;
 
