@@ -1,3 +1,6 @@
+# NetSuite Popup Button Handler
+
+![Popup Modal Demo](popup-demo.png)
 
 ## Deployment Instructions
 
