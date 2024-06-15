@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">My Popup</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="myPopupForm">
+                    <div class="form-group">
+                        <label for="textfield">Text Field</label>
+                        <input type="text" class="form-control" id="textfield" placeholder="Enter text">
+                    </div>
+                    <div class="form-group">
+                        <label for="listfield">List Field</label>
+                        <select class="form-control" id="listfield">
+                            <option></option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkboxfield_1">
+                        <label class="form-check-label" for="checkboxfield">Default checkbox 1</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="checkboxfield_2">
+                        <label class="form-check-label" for="checkboxfield">Default checkbox 2</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="datefield">Date Field</label>
+                        <input type="date" class="form-control" id="datefield">
+                    </div>
+                    <div class="form-group">
+                        <label for="radiofield">Radio Field</label>
+                        <div>
+                            <input type="radio" id="radio1" name="radiofield" value="Option 1">
+                            <label for="radio1">Option 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radio2" name="radiofield" value="Option 2">
+                            <label for="radio2">Option 2</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="submitPopup()">OK</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
